@@ -24,9 +24,7 @@ if (isset($_GET["suchbegriff"])) {
 	}
 	$return1 = $final; //json_encode($final);
 	
-	//$verbindung = null;
 	
-	//$verbindung = new PDO("mysql:host=localhost;dbname=survey", "root", "");
 						
 	
 	$befehl = $verbindung->prepare("SELECT * FROM lime_survey_873595 WHERE `token` = :suchbegriff");
